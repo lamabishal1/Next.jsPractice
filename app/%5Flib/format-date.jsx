@@ -6,4 +6,4 @@ const formatDate = () => {
     )
 }
 
-export default formaDate
+export default formatDate;
