@@ -1,5 +1,4 @@
 import React from 'react'
-import { Metadata } from 'next';
 
 export const generateMetadata = async ({params})=> {
   const id = params.productId;
@@ -11,7 +10,7 @@ export const generateMetadata = async ({params})=> {
 const page = async ({params})=> {
 
   return (
-    <h1>details : {params.productId}</h1>
+    <h1>Details about the product {params.productId}</h1>
   )
 }
 
