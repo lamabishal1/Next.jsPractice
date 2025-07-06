@@ -1,17 +1,16 @@
 import React from 'react'
 import { notFound, redirect } from 'next/navigation';
-import { get } from 'http';
 
-function getRandomInt({number}) {
-  return Math.floor(Math.random() * number);
-}
+// function getRandomInt({number}) {
+//   return Math.floor(Math.random() * number);
+// }
 
 const ProductReview = async ({params}) => {
   const {productId, reviewId } = await params;
-  const random = getRandomInt({number: 2});
-  if (random === 1){
-    throw new Error( "Error loading screen.");
-  }
+  // const random = getRandomInt({number: 2});
+  // if (random === 1){
+  //   throw new Error( "Error loading screen.");
+  // }
 
   if (parseInt(reviewId) > 1000){
 

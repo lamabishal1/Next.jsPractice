@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import ErrorWrapper from './error-wrapper'
 
 export const metadata = {
   title: {
@@ -16,7 +17,9 @@ const Marketinglayout = ({children}) => {
     <html>
       <body>
       <Header />
+      <ErrorWrapper>
         {children}
+        </ErrorWrapper>
           <Footer />
       </body>
     </html>
