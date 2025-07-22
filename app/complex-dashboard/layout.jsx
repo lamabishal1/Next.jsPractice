@@ -1,5 +1,9 @@
-export default function ComplexDashboardLayout({ children, users, revenue, notification }) {
-    return (
+
+export default function ComplexDashboardLayout({ children, users, revenue, notification, login }) {
+    
+    const isLoggedIn = true;
+    
+    return isLoggedIn ?(
         <>
             <div className="bg-blue-50 p-6 rounded-lg shadow mb-6">
                 {children}
@@ -16,4 +20,9 @@ export default function ComplexDashboardLayout({ children, users, revenue, notif
                 </div>
             </div>
         </>
-    )}
+    ):
+    (
+       login
+
+    );
+}

@@ -1,5 +1,5 @@
 import Card from "../../components/Card.jsx";
-import Link from    "next/link";
+import Link from  "next/link";
 export default function Notification() {
     return (
         
